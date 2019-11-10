@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".SubActivity">
+
+    <TextView
+        android:id="@+id/top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="25dp"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CalcSecond"
-        android:id="@+id/textView"/>
+        android:layout_alignBottom="@id/top1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-76dp"
+        android:text="計算結果"
+        android:textSize="25dp" />
 
-</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text=""
+        android:id="@+id/ans"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
